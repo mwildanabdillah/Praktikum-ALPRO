@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="UTBK"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-18 12:43:16 AM"/>
+        <attribute name="created" value="VVRCSztERVNLVE9QLTIyNTc5RFI7MjAyMi0wMy0xODsxMjozNTozNyBBTTsyNTc2"/>
+        <attribute name="edited" value="VVRCSztERVNLVE9QLTIyNTc5RFI7MjAyMi0wMy0xODsxMjo0MzoxNiBBTTsxOzI2ODA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="panjang" type="Integer" array="False" size=""/>
+            <declare name="lebar" type="Integer" array="False" size=""/>
+            <declare name="luas" type="Integer" array="False" size=""/>
+            <input variable="panjang"/>
+            <input variable="lebar"/>
+            <assign variable="luas" expression="panjang * lebar"/>
+            <output expression="luas" newline="True"/>
+            <if expression="luas &lt; 50">
+                <then>
+                    <output expression="&quot;kecil&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="luas &gt;= 50 &amp;&amp; luas &lt; 100">
+                        <then>
+                            <output expression="&quot;menengah&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;besar&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
